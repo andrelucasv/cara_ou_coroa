@@ -1,3 +1,4 @@
+import 'package:cara_ou_coroa/result_page.dart';
 import 'package:flutter/material.dart';
 
 class Jogar extends StatefulWidget {
@@ -10,7 +11,12 @@ class Jogar extends StatefulWidget {
 class _JogarState extends State<Jogar> {
 
   void _exibirResultado (){
-
+    Navigator.push(
+      context, 
+      MaterialPageRoute(
+        builder: (context) => Resultado()
+      )
+    );
   }
 
   @override
